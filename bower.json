@@ -16,6 +16,7 @@
     "polymer": "~0.3.3",
     "underscore": "~1.6.0",
     "polymer-anchor-query": "reggi/polymer-anchor-query",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.1.0",
+    "polymer-github-ribbon": "reggi/polymer-github-ribbon"
   }
 }

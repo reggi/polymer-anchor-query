@@ -1,8 +1,11 @@
 {
-  "name": "polymer-share-twitter",
+  "name": "polymer-github-ribbon",
   "version": "0.0.0",
   "authors": [
     "reggi <thomas@reggi.com>"
+  ],
+  "keywords": [
+    "polymer"
   ],
   "license": "MIT",
   "ignore": [
@@ -13,10 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "~0.3.3",
-    "underscore": "~1.6.0"
-  },
-  "devDependencies": {
-    "font-awesome": "~4.1.0"
+    "polymer": "~0.3.3"
   }
 }
