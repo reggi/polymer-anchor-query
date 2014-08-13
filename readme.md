@@ -9,11 +9,12 @@ bower install reggi/polymer-anchor-query --save
 ## Usage
 
 Drop the following lines within the `<head>` tag.
-
+```
   <script src="./bower_components/platform/platform.js"></script>
   <link rel="import" href="./bower_components/polymer-anchor-query/anchor-query.html">
+```
 
-To create a new banner use the `<anchor-query>` tag.
+To create a new anchor use the `<anchor-query>` tag.
 
 ### Usage Option 1
 
