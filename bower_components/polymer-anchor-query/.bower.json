@@ -19,11 +19,11 @@
     "font-awesome": "~4.1.0"
   },
   "homepage": "https://github.com/reggi/polymer-anchor-query",
-  "_release": "496fb51169",
+  "_release": "5c719f31e4",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "496fb511691400d5862fdc58fe032c9a83c3683e"
+    "commit": "5c719f31e48fd0b95092b5e8d0cee21fa9ba61bf"
   },
   "_source": "git://github.com/reggi/polymer-anchor-query.git",
   "_target": "*",
