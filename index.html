@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <script src="./bower_components/platform/platform.js"></script>
+  <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="import" href="./bower_components/polymer-share-twitter/anchor-query.html">
+  <style>
+    i{font-size:100px;}
+  </style>
+</head>
+<body>
+
+<anchor-query href="https://twitter.com/share" text="I'm using <anchor-query>!" via="thomasreggi" url="https://github.com/reggi/polymer-anchor-query">
+  <i class="fa fa-twitter"></i>
+</anchor-query>
+
+<anchor-query href="http://www.facebook.com/sharer.php">
+  <query-param name="p[url]" value="https://github.com/reggi/polymer-anchor-query"></query-param>
+  <query-param name="p[images][0]" value="https://pbs.twimg.com/profile_images/436575110950948864/R8YcGKHV.png"></query-param>
+  <query-param name="p[title]">Github polymer-anchor-query</query-param>
+  <query-param name="p[summary]">Create an anchor and pass in the query parameters as HTML attributes.</query-param>
+  <i class="fa fa-facebook"></i>
+</anchor-query>
+
+</body>
+</html>

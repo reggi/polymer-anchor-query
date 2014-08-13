@@ -1,5 +1,5 @@
 {
-  "name": "polymer-anchor-query-demo",
+  "name": "polymer-share-twitter",
   "version": "0.0.0",
   "authors": [
     "reggi <thomas@reggi.com>"
@@ -14,8 +14,9 @@
   ],
   "dependencies": {
     "polymer": "~0.3.3",
-    "underscore": "~1.6.0",
-    "polymer-anchor-query": "reggi/polymer-anchor-query",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
     "font-awesome": "~4.1.0"
   }
 }
