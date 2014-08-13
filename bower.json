@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "polymer": "~0.3.3",
-    "underscore": "~1.6.0",
+    "underscore": "~1.6.0"
   },
   "devDependencies": {
     "font-awesome": "~4.1.0"
