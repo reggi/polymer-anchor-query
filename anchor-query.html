@@ -1,0 +1,59 @@
+<link rel="import" href="../polymer/polymer.html">
+<script src="./bower_components/underscore/underscore.js"></script>
+<polymer-element name="anchor-query" attributes="href text">
+<template>
+  <style shim-shadowdom>
+    :host {
+      display: inline-block;
+    }
+    ::content query-param{
+      display:none;
+    }
+  </style>
+  <a id="anchor" href="{{ href }}">
+    <content>
+    </content>
+  </a>
+</template>
+<script>
+
+  Polymer('anchor-query', {
+    ready:function(){
+
+      var query_via_elms = _.extend.apply(null, _.map(this.querySelectorAll('query-param'), function(elm){
+        var temp = {};
+        var name = elm.attributes.name.value;
+        var value = (elm.textContent) ? elm.textContent : elm.attributes.value.value;
+        temp[name] = value;
+        return temp;
+      }));
+
+      var query_via_attr = _.extend.apply(null, _.map(this.attributes, function(attribute){
+        var temp = {};
+        temp[attribute.name] = attribute.value;
+        return temp;
+      }));
+
+      var query = function(){
+        var query = {};
+        _.extend(query, query_via_attr);
+        this.base = query.href;
+        delete query.href;
+        _.extend(query, query_via_elms);
+        return query;
+      }();
+
+      var query_string = _.map(query, function(value, key){
+        var temp = [];
+        temp.push(key);
+        temp.push("=");
+        temp.push(encodeURIComponent(value));
+        return temp.join("");
+      }).join("&");
+
+      this.href = this.href + "?" + query_string;
+      
+    }
+  });
+</script>
+</polymer-element>
